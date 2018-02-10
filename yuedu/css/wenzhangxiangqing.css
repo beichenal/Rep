@@ -1,0 +1,408 @@
+.center {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+header {
+    position: relative;
+    padding: 1px;
+    height: 60px;
+    background-color: #7F4A88;
+    margin: 0 auto;
+}
+
+header .log {
+    display: inline-block;
+    margin: 17px 0 17px 39px;
+    width: 78px;
+    height: 26px;
+    background: url("../images/log2.png");
+}
+
+.fenge {
+    position: absolute;
+    display: inline-block;
+    left: 135px;
+    top: 19px;
+    width: 2px;
+    height: 24px;
+    background-color: #fff;
+}
+
+.mengc2 {
+    position: absolute;
+    width: 109px;
+    height: 33px;
+    left: 150px;
+    top: 14px;
+    font-family: PingFangSC-Regular;
+    font-size: 24px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+}
+
+.right {
+    box-sizing: border-box;
+    float: right;
+    height: 60px;
+}
+
+.right li {
+    margin-right: 20px;
+    height: 60px;
+    line-height: 60px;
+    box-sizing: border-box;
+    font-family: PingFangSC-Regular;
+    color: #FFFFFF;
+}
+
+.right li a {
+    color: #FFFFFF;
+}
+
+.tx {
+    vertical-align: top;
+    position: relative;
+    cursor: pointer;
+}
+
+#li-nav {
+    position: relative;
+}
+
+.tx:hover img {
+    transform: rotateZ(-180deg);
+}
+
+.tx:hover #nav {
+    visibility: visible;
+    opacity: 1;
+}
+
+#nav li:hover {
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.10);
+}
+
+#nav:active {
+    opacity: 1;
+}
+
+#nav {
+    transition: all 800ms;
+    opacity: 0;
+    visibility: hidden;
+    box-sizing: border-box;
+    z-index: 10;
+    position: absolute;
+    width: 112px;
+    top: 55px;
+    left: -80px;
+    background: #FFFFFF;
+    border: 1px solid #F2EEF3;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.10);
+    height: 125px;
+    padding: 15px 16px 11px 16px;
+    border: 1px solid #F2EEF3;
+}
+
+#nav li {
+    box-sizing: border-box;
+    padding-left: 22px;
+    margin-bottom: 21px;
+    margin-left: 0;
+    margin-right: 0;
+    line-height: 18px;
+    display: block;
+    height: 18px;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #222629;
+}
+
+#self {
+    background: url("../images/icon_user.png") no-repeat left center;
+}
+
+#account {
+    background: url("../images/icon_setting.png") no-repeat left center;
+}
+
+#backlogin {
+    background: url("../images/icon_exit.png") no-repeat left center;
+}
+
+#icon {
+    z-index: 1;
+    border-top: 1px solid #F2EEF3;
+    border-left: 1px solid #F2EEF3;
+    box-sizing: border-box;
+    transform: rotateZ(45deg);
+    display: inline-block;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    top: -7px;
+    right: 12px;
+}
+
+.tx .user {
+    width: 68px;
+    text-overflow: ellipsis;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    padding-left: 40px;
+}
+
+.tx img {
+    transition: transform 800ms;
+    vertical-align: text-bottom;
+}
+
+.right .touxiang {
+    position: absolute;
+    top: 13px;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.right li a span {
+    background: url("../images/icon.jpg") no-repeat left;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+.right .xiewenzhang {
+    vertical-align: top;
+    width: 106px;
+    padding-left: 24px;
+    background: url("../images/icon.jpg") no-repeat left center;
+}
+
+#li-nav {
+    display: inline-block;
+    position: relative;
+}
+
+/* 头部结束 */
+
+.ce {
+    overflow: hidden;
+    width: 906px;
+    margin: 67px auto;
+}
+
+.biaoti h3 {
+    display: inline-block;
+    width: auto;
+    margin: 0px;
+    font-family: PingFangSC-Semibold;
+    font-size: 18px;
+    color: #222629;
+}
+
+.biaoti .tubiao {
+    position: relative;
+}
+
+.biaoti .fenxiang {
+    background: url("../images/icon_share.png") no-repeat left center;
+    display: inline-block;
+    margin-left: 58px;
+    width: 40px;
+    height: 15px;
+    padding-left: 23px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: rgba(127, 74, 136, 0.7);
+    line-height: 15px;
+}
+
+.biaoti img {
+    z-index: 1;
+    /* background-color: #fff; */
+    display: none;
+    position: absolute;
+    top: 37px;
+    left: 0px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.20);
+}
+
+.dianji:hover img {
+    display: inline-block;
+}
+
+.li-dd-user {
+    margin: 20px 0;
+    position: relative;
+}
+
+.li-dd-user-ico {
+    cursor: pointer;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-size: cover;
+    /* background-color: black; */
+    /* background-image: url(../); */
+}
+
+.li-dd-username {
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    margin-left: 10px;
+    display: inline-block;
+    line-height: 36px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #222629;
+}
+
+.li-dd-time {
+    opacity: 0.7;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #222629;
+    line-height: 36px;
+    position: absolute;
+    top: 0px;
+    margin-left: 76px;
+}
+
+.li-dd-zan {
+    box-sizing: border-box;
+    padding-top: 8px;
+    position: absolute;
+    left: 241px;
+    display: inline-block;
+    height: 36px;
+    /* background-color: black; */
+}
+
+.li-dd-zan i {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    font-style: normal;
+    background-image: url("../images/icon_thumb_up_like.png");
+}
+
+.li-dd-zan-num {
+    margin-left: 9px;
+    opacity: 0.7;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #222629;
+}
+
+.li-dd-liulan {
+    box-sizing: border-box;
+    padding-top: 8px;
+    position: absolute;
+    left: 326px;
+    display: inline-block;
+    height: 36px;
+    /* background-color: black; */
+}
+
+.li-dd-liulan i {
+    display: inline-block;
+    width: 19px;
+    height: 12px;
+    font-style: normal;
+    background-image: url("../images/icon_saw.png");
+}
+
+.li-dd-liulan-num {
+    margin-left: 9px;
+    opacity: 0.7;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #222629;
+}
+
+.tupian {
+    display: inline-block;
+    width: 906px;
+    height: 375px;
+    /* background: url("../images/pic.png") no-repeat center center; */
+    background-size: cover;
+    overflow: hidden;
+}
+
+.wenzhang {
+    border-bottom: 1px solid rgba(127, 74, 136, 0.5);
+    box-sizing: border-box;
+    padding: 40px 0;
+    text-indent: 2em;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #222629;
+    letter-spacing: 0;
+    line-height: 24px;
+    width: 906px;
+    word-break: break-word;
+}
+
+.dianping p {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    font-weight: 600;
+    color: #222629;
+}
+
+#dianpingkuang {
+    box-sizing: border-box;
+    text-indent: 2em;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    padding: 14px 14px 0 14px;
+    width: 900px;
+    height: 103px;
+    resize: none;
+    background: rgba(127, 74, 136, 0.2);
+    border-radius: 5px;
+    outline: none;
+}
+
+#dianpingkuang::-webkit-input-placeholder {
+    opacity: 0.7;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #222629;
+}
+
+#dianping-tijiao {
+    color: #fff;
+    margin: 22px 0px 22px 818px;
+    width: 88px;
+    height: 36px;
+    border: 0px;
+    outline: none;
+    background: #7F4A88;
+    border-radius: 4px;
+}
+
+.liuyan p {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #222629;
+}
+
+.liuyan li {
+    border-top: 1px solid rgba(127, 74, 136, 0.5);
+    width: 906px;
+}
+
+.suojing {
+    box-sizing: border-box;
+    text-indent: 2em;
+    width: 906px;
+    word-break: break-word;
+    padding: 0 10px;
+}

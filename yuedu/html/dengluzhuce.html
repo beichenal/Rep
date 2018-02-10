@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/regist.css">
+    <title>登陆</title>
+</head>
+
+<body>
+    <div class="denglu">
+        <div class="denglu-top">
+            <div class="denglu-top-log"></div>
+            <div class="denglu-top-l"></div>
+            <div class="denglu-top-r">悦读项目</div>
+        </div>
+        <div class="reg">
+            <div class="denglu-xiang denglu-sty" id="regist">登录</div>
+            <div class="zhuce zhuce-sty" id="zhuce-item">注册</div>
+            <div class="bottom-line bottom-line-2" id="btl"></div>
+            <form autocomplete="off" id="form2" class="yingchang" name="denglu">
+                <div>
+                    <label for="username">用户名：</label><input type="text" name="username" id="username">
+                </div>
+                <div>
+                    <label for="mima">密&nbsp;&nbsp;&nbsp;码：</label><input type="password" name="userkey" id="mima">
+                </div>
+                <span id="denglu-tishi" class="yingchang">账户或密码错误</span>
+                <a href="../html/zhaohuimima.html" id="forget-pwd">忘记密码!</a>
+                <div>
+                    <input type="button" value="登&nbsp;&nbsp;&nbsp;&nbsp;陆" id="denglu-but">
+            </form>
+            </div>
+            <form autocomplete="off" id="form1" class="xianshi">
+                <input class="shoujinum biaoshi" type="text" name="userkey" placeholder="请输入手机号码" id="phoneNum">
+                <span id="biaoshi-string" class="yingchang">已注册！</span>
+                <input class="yanzhengma biaoshi" type="text" name="yanzengma" placeholder="请输入短信验证码">
+                <span id="yanzheng-biaoshi" class="yingchang">已过期</span>
+                <input class="fasong " type="button" name="fasong" value="获取验证码" id="yanzhenma">
+                <input class="mima biaoshi" type="password" name="userpassword" placeholder="请输入6~32位密码（密码中必须包含字母、数字、特称字符）" id="pwd">
+                <input class="repeat-mima biaoshi" type="password" name="userpassword" placeholder="重复密码" id="pwd2">
+                <input class="submi" type="button" value="注    册" id="regis">
+            </form>
+            <p class="tishi">
+                <label for="regist">已有账户，马上登陆</label>
+            </p>
+        </div>
+    </div>
+    <div class="h"></div>
+    <footer>
+        <div>
+            <p>Copyright © 2017 apis.sh All Rights Reserved | 陕ICP备15013925号-3</p>
+        </div>
+    </footer>
+    <script src="../js/base.js"></script>
+    <script src="../js/dengluzhuce.js"></script>
+</body>
+
+</html>

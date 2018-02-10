@@ -1,0 +1,337 @@
+.center {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+header {
+    position: relative;
+    padding: 1px;
+    height: 60px;
+    background-color: #7F4A88;
+    margin: 0 auto;
+}
+
+header .log {
+    display: inline-block;
+    margin: 17px 0 17px 39px;
+    width: 78px;
+    height: 26px;
+    background: url("../images/log2.png");
+}
+
+.fenge {
+    position: absolute;
+    display: inline-block;
+    left: 135px;
+    top: 19px;
+    width: 2px;
+    height: 24px;
+    background-color: #fff;
+}
+
+.mengc2 {
+    position: absolute;
+    width: 109px;
+    height: 33px;
+    left: 150px;
+    top: 14px;
+    font-family: PingFangSC-Regular;
+    font-size: 24px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+}
+
+.right {
+    box-sizing: border-box;
+    float: right;
+    height: 60px;
+}
+
+.right li {
+    margin-right: 20px;
+    height: 60px;
+    line-height: 60px;
+    box-sizing: border-box;
+    font-family: PingFangSC-Regular;
+    color: #FFFFFF;
+}
+
+.right li a {
+    color: #FFFFFF;
+}
+
+.tx {
+    vertical-align: top;
+    position: relative;
+    cursor: pointer;
+}
+
+#li-nav {
+    position: relative;
+}
+
+.tx:hover img {
+    transform: rotateZ(-180deg);
+}
+
+.tx:hover #nav {
+    visibility: visible;
+    opacity: 1;
+}
+
+#nav li:hover {
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.10);
+}
+
+#nav:active {
+    opacity: 1;
+}
+
+#nav {
+    transition: all 800ms;
+    opacity: 0;
+    visibility: hidden;
+    box-sizing: border-box;
+    z-index: 10;
+    position: absolute;
+    width: 112px;
+    top: 55px;
+    left: -80px;
+    background: #FFFFFF;
+    border: 1px solid #F2EEF3;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.10);
+    height: 125px;
+    padding: 15px 16px 11px 16px;
+    border: 1px solid #F2EEF3;
+}
+
+#nav li {
+    box-sizing: border-box;
+    padding-left: 22px;
+    margin-bottom: 21px;
+    margin-left: 0;
+    margin-right: 0;
+    line-height: 18px;
+    display: block;
+    height: 18px;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #222629;
+}
+
+#self {
+    background: url("../images/icon_user.png") no-repeat left center;
+}
+
+#account {
+    background: url("../images/icon_setting.png") no-repeat left center;
+}
+
+#backlogin {
+    background: url("../images/icon_exit.png") no-repeat left center;
+}
+
+#icon {
+    z-index: 1;
+    border-top: 1px solid #F2EEF3;
+    border-left: 1px solid #F2EEF3;
+    box-sizing: border-box;
+    transform: rotateZ(45deg);
+    display: inline-block;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    top: -7px;
+    right: 12px;
+}
+
+.tx .user {
+    width: 68px;
+    text-overflow: ellipsis;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    padding-left: 40px;
+}
+
+.tx img {
+    transition: transform 800ms;
+    vertical-align: text-bottom;
+}
+
+.right .touxiang {
+    position: absolute;
+    top: 13px;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.right li a span {
+    background: url("../images/icon.jpg") no-repeat left;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+.right .xiewenzhang {
+    cursor: pointer;
+    vertical-align: top;
+    width: 106px;
+    padding-left: 36px;
+    background: url("../images/fabu.png") no-repeat left center;
+}
+
+#li-nav {
+    display: inline-block;
+    position: relative;
+}
+
+/* 头部结束 */
+
+.main {
+    margin: 58px auto;
+    width: 998px;
+    height: 790px;
+    background: #FFFFFF;
+    border: 1px solid #F0E9F1;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 0 6px 0 rgba(0, 0, 0, 0.04);
+    border-radius: 2px;
+}
+
+#file-img {
+    position: absolute;
+    top: 120px;
+    left: 380px;
+    opacity: 0;
+}
+
+.shangchuan {
+    position: relative;
+}
+
+.shangchuan label {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: inline-block;
+    padding-top: 82px;
+    width: 998px;
+    height: 287px;
+    background-color: rgba(127, 74, 136, 0.35);
+}
+
+.camrea {
+    width: 55px;
+    height: 47px;
+    background-image: url("../images/icon_camrea.png");
+    margin: 10px auto;
+}
+
+.shangchuan p {
+    text-align: center;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #222629;
+}
+
+.shangchuan .change {
+    z-index: 998;
+    display: none;
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #FFFFFF;
+    line-height: 42px;
+    position: absolute;
+    bottom: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+    height: 42px;
+    background: rgba(34, 38, 41, 0.5);
+}
+
+.chang-up {
+    display: inline-block;
+}
+
+.up-img {
+    cursor: auto;
+    position: absolute;
+    top: 0px;
+    display: inline-block;
+    width: 998px;
+    height: 287px;
+    overflow: hidden;
+}
+
+#biaoti {
+    font-family: PingFangSC-Regular;
+    font-size: 18px;
+    color: black;
+    margin-top: 14px;
+    margin-left: 52px;
+    padding-bottom: 6px;
+    width: 895px;
+    height: 25px;
+    outline: none;
+    border: 0px;
+    border-bottom: 1px solid #BFA4C3;
+}
+
+#biaoti::-webkit-input-placeholder {
+    font-family: PingFangSC-Regular;
+    font-size: 18px;
+    color: #6C6F71;
+}
+
+.content,
+.content:focus {
+    padding: 10px 4px 5px 8px;
+    outline: none;
+    text-indent: 2em;
+    font-family: PingFangSC-Regular;
+    font-size: 18px;
+    resize: none;
+    box-sizing: border-box;
+    margin: 20px 0 0 52px;
+    width: 895px;
+    height: 380px;
+    border: 1px solid rgba(127, 74, 136, 0.5);
+}
+
+.content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.content::-webkit-scrollbar-thumb {
+    width: 4px;
+    height: 140px;
+    background: rgba(31, 45, 61, 0.14);
+    border-radius: 4px;
+}
+
+.content::-webkit-input-placeholder {
+    /* padding-top: 10px; */
+    /* padding-left: 12px; */
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: rgba(108, 111, 113, 0.8);
+}
+
+.content footer {
+    width: 100%;
+    height: 66px;
+    margin-bottom: 0;
+    border-top: 1px solid #7F4A88;
+    text-align: center;
+}
+
+footer p {
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #222629;
+    letter-spacing: 0;
+    line-height: 66px;
+}
