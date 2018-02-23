@@ -176,6 +176,7 @@ header .log {
 }
 
 .right .xiewenzhang {
+    cursor: pointer;
     vertical-align: top;
     width: 106px;
     padding-left: 24px;
@@ -271,14 +272,14 @@ header .log {
     line-height: 36px;
     position: absolute;
     top: 0px;
-    margin-left: 76px;
+    margin-left: 133px;
 }
 
 .li-dd-zan {
     box-sizing: border-box;
     padding-top: 8px;
     position: absolute;
-    left: 241px;
+    left: 328px;
     display: inline-block;
     height: 36px;
     /* background-color: black; */
@@ -304,7 +305,7 @@ header .log {
     box-sizing: border-box;
     padding-top: 8px;
     position: absolute;
-    left: 326px;
+    left: 400px;
     display: inline-block;
     height: 36px;
     /* background-color: black; */
