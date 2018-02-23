@@ -7,7 +7,6 @@ yanzheng("phoneNum", /^1[3|4|5|7|8][0-9]{9}$/, "err", function (that) {
 
 
 
-//密码格式验证
 yanzheng("pwd", /(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[^a-zA-Z0-9]).{6,32}/, "err", function (that) {
     that.value = "";
     that.focus();
