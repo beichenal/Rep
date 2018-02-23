@@ -148,7 +148,7 @@ function preLoadImg(add, img) {
     };
     // 加载失败。
     tmpImg.onerror = function () {
-        var error = "../images/article.png"; // 此处为错误图片地址，用户自行修改
+        var error = "../images/error.png"; // 此处为错误图片地址，用户自行修改
         img.src = error;
     };
     // 预加载图片(接口返回的图片地址需要前加上服务器地址)。
@@ -167,7 +167,7 @@ function lazyload() {
     imags.forEach(function (img) {
         // 图片请求后不再执行该函数
         if (img.dataset.src === '') return;
-        if (img.getBoundingClientRect().top + loading.offsetHeight - 30 < document.documentElement.clientHeight) {
+        if (img.getBoundingClientRect().top < document.documentElement.clientHeight) {
             // 当图片出现在视窗中时，请求该图片。
             preLoadImg(img.dataset.src, img);
             // 通过dataset获取图片的真实地址
