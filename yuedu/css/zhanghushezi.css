@@ -265,6 +265,7 @@ header .log {
 }
 
 .right .xiewenzhang {
+    cursor: pointer;
     vertical-align: top;
     width: 106px;
     padding-left: 24px;

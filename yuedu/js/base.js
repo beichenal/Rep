@@ -249,3 +249,8 @@ document.querySelector("#backlogin").onclick=function(){
 };
 document.querySelector(".pic").style.background = "url(" + static_url+localStorage.avatar + ") no-repeat center";
 document.querySelector(".user").innerHTML = localStorage.name;
+if(document.querySelector(".xiewenzhang")){
+    document.querySelector(".xiewenzhang").onclick=function(){
+        window.location.href="xiewenzhang.html";
+    };
+}

@@ -12,10 +12,10 @@ myajax("GET", url + "/posts/list?page=1" + "&limit=3", function (data) {
         //end
         for (let i = 0; i < 3; i++) {
             var ul_li = document.createElement("li");
-            ul_li.innerHTML = dealwith_li(static_url + data.data.articles[i].cover, static_url + data.data.articles[i].cover, data.data.articles[i].title, data.data.articles[i].abstract, static_url + data.data.articles[i].author.avatar, data.data.articles[i].author.name, time(data.data.articles[i].create_time), data.data.articles[i].praise_sum, data.data.articles[i].look_sum, data.data.articles[i].author._id, data.data.articles[i]._id);
+            ul_li.innerHTML = dealwith_li(/*  static_url + data.data.articles[i].cover  */ "", /*  static_url + data.data.articles[i].cover */"", data.data.articles[i].title, data.data.articles[i].abstract, static_url + data.data.articles[i].author.avatar, data.data.articles[i].author.name, time(data.data.articles[i].create_time), data.data.articles[i].praise_sum, data.data.articles[i].look_sum, data.data.articles[i].author._id, data.data.articles[i]._id);
             UL.appendChild(ul_li);
         }
-        lazyload();
+      //  lazyload();
     }
 });
 
@@ -45,7 +45,6 @@ myajax("GET", url + "/posts/list?page=1" + "&limit=3", function (data) {
                     }
                 }, 250);
     }());
-document.body.addEventListener("scroll",lazyload());
 UL.onclick = function (e) {
     if (e.target.classList.contains("zan_ico")) {
         if (e.target.dataset.flag == "yes") {

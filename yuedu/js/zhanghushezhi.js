@@ -1,3 +1,5 @@
+
+console.log(localStorage);
 //预填写
 document.querySelector("#nichen").value = localStorage.name;
 if (localStorage.gender == "man") {
@@ -20,13 +22,13 @@ myajax("GET", url + "/city/province?ProID=" + localStorage.city.split(",")[0], f
         document.querySelector("#select2").innerHTML = data.data.province;
     }
 });
-myajax("GET", url + "/city/province?ProID=" + localStorage.city.split(",")[0] + "&CityID=" + localStorage.city.split(",")[1], function (data) {
+myajax("GET", url + "/city/city?ProID=" + localStorage.city.split(",")[0] + "&CityID=" + localStorage.city.split(",")[1], function (data) {
     if (data.code == "SUCCESS") {
         document.querySelector("#select3").innerHTML = data.data.city;
     }
 });
 
-myajax("GET", url + "/city/province?id=" + localStorage.city.split(",")[2] + "&CityID=" + localStorage.city.split(",")[1], function (data) {
+myajax("GET", url + "/city/area?Id=" + localStorage.city.split(",")[2] + "&CityID=" + localStorage.city.split(",")[1], function (data) {
     if (data.code == "SUCCESS") {
         document.querySelector("#select4").innerHTML = data.data.area;
     }
@@ -183,15 +185,17 @@ document.querySelector("#queding").onclick = function () {
     }
     var that = this;
     var arr = ["[" + document.querySelector("#select2").dataset.ID, document.querySelector("#select3").dataset.ID, document.querySelector("#select4").dataset.ID + "]"];
+    var arr2 = ["[" +localStorage.city.split(",")[0],localStorage.city.split(",")[1] , localStorage.city.split(",")[2] + "]"];
+
     var arr1 = [document.querySelector("#select2").innerHTML, document.querySelector("#select3").innerHTML, document.querySelector("#select4").innerHTML];
 
-    var arr2 = [parseInt(document.querySelector("#select2").dataset.ID), parseInt(document.querySelector("#select3").dataset.ID), parseInt(document.querySelector("#select4").dataset.ID)];
+    // var arr2 = [parseInt(document.querySelector("#select2").dataset.ID), parseInt(document.querySelector("#select3").dataset.ID), parseInt(document.querySelector("#select4").dataset.ID)];
     var formdata = new FormData();
     formdata.append("token", localStorage.token);
     formdata.append("avatar", document.querySelector("#file-img").files[0]);
     formdata.append("gender", sex);
-    formdata.append("city", arr);
-    formdata.append("constellation", document.querySelector("#select").innerHTML);
+    formdata.append("city", arr2);
+    // formdata.append("constellation", document.querySelector("#select").innerHTML);
     formdata.append("name", document.querySelector("#nichen").value);
 
 
@@ -206,7 +210,7 @@ document.querySelector("#queding").onclick = function () {
             localStorage.avatar = data.data.user.avatar;
             localStorage.id = data.data.user._id;
             localStorage.account = data.data.user.account;
-            // window.location.href = "dengluzhuce.html";
+            window.location.href = "dengluzhuce.html";
         } else if (data.code == "sms_captcha_overdue") {
             panduan("#yanzheng-biaoshi");
             that.removeAttribute("disabled");
