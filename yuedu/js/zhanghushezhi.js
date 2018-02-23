@@ -184,17 +184,20 @@ document.querySelector("#queding").onclick = function () {
         }
     }
     var that = this;
-    var arr = ["[" + document.querySelector("#select2").dataset.ID, document.querySelector("#select3").dataset.ID, document.querySelector("#select4").dataset.ID + "]"];
-    var arr2 = ["[" +localStorage.city.split(",")[0],localStorage.city.split(",")[1] , localStorage.city.split(",")[2] + "]"];
 
-    var arr1 = [document.querySelector("#select2").innerHTML, document.querySelector("#select3").innerHTML, document.querySelector("#select4").innerHTML];
+if(document.querySelector("#select2").dataset.id==""){
+    arr=["[" + document.querySelector("#select2").dataset.ID, document.querySelector("#select3").dataset.ID, document.querySelector("#select4").dataset.ID + "]"];
+}
+else{
+    arr=["[" +localStorage.city.split(",")[0],localStorage.city.split(",")[1] , localStorage.city.split(",")[2] + "]"];
+}
 
     // var arr2 = [parseInt(document.querySelector("#select2").dataset.ID), parseInt(document.querySelector("#select3").dataset.ID), parseInt(document.querySelector("#select4").dataset.ID)];
     var formdata = new FormData();
     formdata.append("token", localStorage.token);
     formdata.append("avatar", document.querySelector("#file-img").files[0]);
     formdata.append("gender", sex);
-    formdata.append("city", arr2);
+    formdata.append("city", arr);
     // formdata.append("constellation", document.querySelector("#select").innerHTML);
     formdata.append("name", document.querySelector("#nichen").value);
 
