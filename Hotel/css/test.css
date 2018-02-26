@@ -63,5 +63,38 @@
  }
  /* 未登录结束 */
 
- #user {
+
+
+
+
+
+
+ #user{
+    list-style-type: none;
  }
+ #user li{
+     height: 60px;
+     float: right;
+
+ }
+ #user-avatar{
+     display: inline-block;
+     width: 36px;
+     height: 36px;
+     border-radius: 50%;
+     background-color: #fff;
+     margin-bottom: 10px;
+ }
+ #user-name{
+     height: 60px;
+     display: inline-block;
+     font-family: PingFangSC-Regular;
+     font-size: 14px;
+     vertical-align: text-bottom;
+     line-height: 60px;
+     margin-left:  10px;
+     color:  #fff;
+ }
+#user-li .saber{
+    color: #fff
+}
