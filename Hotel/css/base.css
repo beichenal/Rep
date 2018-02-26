@@ -1,0 +1,210 @@
+ .main-color {
+     background-color: #5944C3;
+ }
+
+ #header,
+ #header div {
+     height: 60px;
+ }
+
+ #header .header-log {
+     margin-left: 60px;
+ }
+
+ #log {
+     height: 60px;
+     width: 80px;
+     display: inline-block;
+     background: url("../images/logo_white.png") no-repeat left center;
+ }
+
+ #header .line {
+     vertical-align: top;
+     margin-left: 20px;
+     background-color: #fff;
+     display: inline-block;
+     width: 2px;
+     height: 24px;
+     margin-top: 19px;
+ }
+
+ #header .hotel {
+     display: inline-block;
+     height: 60px;
+     line-height: 60px;
+     margin-left: 17px;
+     color: white;
+     font-family: PingFangSC-Regular;
+     font-size: 24px;
+     vertical-align: top;
+     cursor: default;
+ }
+
+ #header .header-right {
+     margin-right: 30px;
+     height: 60px;
+     float: right;
+ }
+
+ #reg {
+     list-style-type: none;
+     font-family: PingFangSC-Regular;
+     font-size: 14px;
+     color: #fff;
+ }
+
+ #reg li {
+     line-height: 60px;
+     float: right;
+     margin-left: 25px;
+ }
+
+ #reg li a {
+     color: #fff;
+ }
+
+ #reg li a:hover {
+     text-decoration: none;
+ }
+
+ /* 未登录结束 */
+
+ #user {
+     list-style-type: none;
+ }
+
+ #user li {
+     cursor: pointer;
+     height: 60px;
+     float: right;
+ }
+
+ #user-avatar {
+     display: inline-block;
+     width: 36px;
+     height: 36px;
+     border-radius: 50%;
+     background-color: #fff;
+     margin-bottom: 10px;
+ }
+
+ #user-name {
+     height: 60px;
+     display: inline-block;
+     font-family: PingFangSC-Regular;
+     font-size: 14px;
+     vertical-align: text-bottom;
+     line-height: 60px;
+     margin-left: 10px;
+     color: #fff;
+ }
+
+ #user-li .saber {
+     color: #fff;
+     line-height: 60px;
+     vertical-align: top;
+     margin-left: 10px;
+     transition: transform 1s;
+ }
+
+ #user-li:hover .saber {
+     transform: rotateZ(180deg);
+ }
+
+ #user .my-list {
+     margin-left: 40px;
+     line-height: 60px;
+ }
+
+ #user .my-list a {
+     font-family: HiraginoSansGB-W3;
+     font-size: 14px;
+     text-decoration: none;
+     color: #fff
+ }
+
+ #user-li {
+     position: relative;
+ }
+
+ #nav {
+     opacity: 0;
+     visibility: hidden;
+     /* padding: 18px 15px; */
+     list-style-type: none;
+     position: absolute;
+     width: 109px;
+     height: 125px;
+     background-color: #fff;
+     top: 56px;
+     left: 22px;
+     border: 1px solid #F2EEF3;
+     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.10);
+     transition: all 1s;
+ }
+
+ #user-li:hover #nav {
+     opacity: 1;
+     visibility: visible;
+ }
+
+ #icon {
+     z-index: 1;
+     border-top: 1px solid #F2EEF3;
+     border-left: 1px solid #F2EEF3;
+     box-sizing: border-box;
+     transform: rotateZ(45deg);
+     display: inline-block;
+     position: absolute;
+     width: 12px;
+     height: 12px;
+     background-color: #fff;
+     top: -6px;
+     right: 12px;
+ }
+
+ #nav li {
+     margin-top: 10px;
+     width: 109px;
+     padding-left: 20px;
+     font-family: HiraginoSansGB-W3;
+     font-size: 14px;
+     height: 30px;
+     line-height: 30px;
+     text-align: center;
+ }
+
+ #self {
+     background: url("../images/icon_my.png") no-repeat 14px center;
+ }
+
+ #account {
+     background: url("../images/icon_setting.png") no-repeat 14px center;
+ }
+
+ #backlogin {
+     background: url("../images/icon_out.png") no-repeat 14px center;
+ }
+
+ #nav li:hover {
+     background-color: rgb(247, 241, 241);
+ }
+
+ /* 已登录结束 */
+
+ /* header 结束 */
+
+ /* footer 开始 */
+
+ #footer{
+     height: 60px;
+     background-color: red;
+     /* background-color: #5944C3; */
+ }
+ #footer p{
+     height: 60px;
+     line-height: 60px;
+     text-align:  center;
+     font-family: PingFangSC-Regular;
+     color: #fff;
+ }
