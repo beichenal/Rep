@@ -1,0 +1,313 @@
+.top {
+    height: 342px;
+    background: url("../images");
+}
+
+.top .select-map {
+    width: 1150px !important;
+    position: relative;
+    height: 32px;
+    margin-top: 85px;
+    /* background-color: pink; */
+}
+
+.top .select-map .row div {
+    line-height: 32px;
+    border: 1px solid red;
+    color: #303030;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    ;
+    height: 32px;
+    border-radius: 4px;
+}
+
+#city {
+    background: url("../images/icon_location.png") no-repeat 260px center;
+}
+
+#date {
+    background: url("../images/icon_day.png") no-repeat 260px center;
+}
+
+#select-city {
+    z-index:  10004;
+    position: absolute;
+    background: #FFFFFF;
+    border: 1px solid #D3DCE6;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 0 6px 0 rgba(0, 0, 0, 0.04);
+    border-radius: 2px;
+    width: 515px;
+    top: 42px;
+    left: 0px;
+    height: 176px;
+}
+
+#select-city .city-tabs li {
+    text-align: center;
+    width: 84px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #3E3E3E;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #5944C3;
+}
+
+.nav-tabs>li>a {
+    margin-right: 0;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+}
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:hover,
+.nav-tabs>li.active>a:focus {
+    color: #fff;
+    cursor: default;
+    background-color: #5944C3;
+    border: 1px solid #5944C3;
+    border-bottom-color: transparent;
+}
+
+.nav>li>a:hover,
+.nav>li>a:focus {
+    text-decoration: none;
+    background-color: #fff;
+}
+
+.nav-tabs>li>a:hover {
+    border-color: #fff #fff #5944C3;
+}
+
+#remeng li {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 20px;
+    margin-right: 6px;
+    float: left;
+    width: 79px;
+    height: 24px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #3E3E3E;
+    background-color: pink;
+    text-align: center;
+    line-height: 24px;
+}
+
+#remeng {
+    padding-left: 0px;
+    height: 40px;
+}
+
+/* date */
+
+#date-tab {
+    position: absolute;
+    top: 42px;
+    left: 392px;
+    background: #FFFFFF;
+    border: 1px solid #D3DCE6;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 0 6px 0 rgba(0, 0, 0, 0.04);
+    border-radius: 2px;
+    /* width: 515px; */
+    /* border: 1px solid red; */
+}
+
+#date-left {
+    border-right: 1px solid #E0E6ED;
+}
+
+#date-left,
+#date-right {
+    vertical-align: top;
+    display: inline-block;
+    padding: 0 24px;
+}
+
+#date-left-top,
+#date-right-top {
+    margin-top: 10px;
+    height: 20px;
+}
+
+#date-left-top-year,
+#date-left-top-month,
+#date-right-top-year,
+#date-right-top-month {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+}
+
+#date-left-top-year {
+    cursor: pointer;
+    background: url("../images/icon_back_year.png") no-repeat center center;
+}
+
+#date-left-top-month {
+    cursor: pointer;
+    background: url("../images/icon_back_month.png") no-repeat center center;
+}
+
+.select-year,
+.select-year span {
+    font-family: HelveticaNeue;
+    font-size: 14px;
+    color: #475669;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    vertical-align: top;
+}
+
+#select-year-right {
+    margin-left: 37px;
+}
+
+#date-month,
+#date-month-right {
+    margin-left: 5px;
+}
+
+#date-right-top-year {
+    cursor: pointer;
+    transform: rotateY(180deg);
+    float: right;
+    background: url("../images/icon_back_year.png") no-repeat center center;
+}
+
+#date-right-top-month {
+    cursor: pointer;
+    transform: rotateY(180deg);
+    float: right;
+    background: url("../images/icon_back_month.png") no-repeat center center;
+}
+
+table {
+    margin: 10px auto;
+}
+
+table tr {
+    height: 32px;
+}
+
+table td {
+    font-size: 12px;
+    color: #475669;
+    text-align: center;
+    width: 24px;
+    line-height: 32px;
+}
+
+table td:hover {
+    background-color: pink;
+}
+
+table th {
+    color: #8492A6;
+    font-family: AppleSystemUIFont;
+    font-size: 12px;
+}
+
+/* date-tab 结束 */
+
+#sousuo {
+    outline: transparent;
+    /* border:  none; */
+    display: block;
+    margin: 32px auto;
+}
+
+#sousuo i {
+    vertical-align: middle;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #5944C3;
+    border-color: #5944C3;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+    color: #fff;
+    background-color: #ccc;
+    border-color: #fff;
+}
+
+/* body */
+
+.main-body {
+    width: 1490px;
+    height: 400px;
+    /* background-color: pink; */
+    margin: 0 auto;
+}
+
+/* .body-top{
+    width: 100%;
+    height: 56px;
+    border-bottom: 2px solid  #5944C3;
+} */
+
+
+
+.body-tab {
+    /* display:  inline-block; */
+    /* margin-top: 14px; */
+    display: inline-block;
+    width: 100%;
+}
+
+.body-ul {
+    position: relative;
+    border-bottom: 3px solid #5944C3;
+}
+.body-ul li{
+    font-family: PingFangSC-Regular;
+font-size: 14px;
+color: #3E3E3E;
+}
+.body-ul .body-remeng {
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #3E3E3E;
+    height: 42px;
+    line-height: 42px;
+    /* margin-left: 0px; */
+    margin-right: 36px;
+}
+.body-tab .nav-tabs>li.active>a,
+.body-tab .nav-tabs>li.active>a:hover,
+.body-tab .nav-tabs>li.active>a:focus {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #3E3E3E;
+    cursor: default;
+    background: url("../images/beijing.png") no-repeat  center center;
+    background-size:  cover;
+    border: 1px solid transparent;
+    border-bottom-color:#5944C3;
+    border-bottom: 1px solid #5944C3 ;
+    /* border-image: url("../images/sanjiao.png"); */
+}
+/* .body-tab .sanjiao{
+    position: absolute;
+    top: 28px;
+    left: 131px;
+    color: #5944C3;
+    z-index: 10003;
+    font-size: 21px;
+} */
+.body-tab .nav-tabs>li>a:hover {
+    border-color:  transparent;
+}
+.body-tab .nav>li>a:hover, .nav>li>a:focus {
+    text-decoration: none;
+    background-color: transparent;
+}

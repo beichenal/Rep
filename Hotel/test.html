@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    #date {
+        background: #FFFFFF;
+        border: 1px solid #D3DCE6;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 0 6px 0 rgba(0, 0, 0, 0.04);
+        border-radius: 2px;
+        width: 515px;
+        /* border: 1px solid red; */
+    }
+
+    #date-left {
+        border-right: 1px solid #E0E6ED;
+    }
+
+    #date-left,
+    #date-right {
+        vertical-align: top;
+        display: inline-block;
+        padding: 0 24px;
+    }
+
+    #date-left-top,
+    #date-right-top {
+        margin-top: 10px;
+        height: 20px;
+    }
+
+    #date-left-top-year,
+    #date-left-top-month,
+    #date-right-top-year,
+    #date-right-top-month {
+        display: inline-block;
+        width: 26px;
+        height: 26px;
+
+    }
+
+    #date-left-top-year {
+        cursor: pointer;
+        background: url("./images/icon_back_year.png") no-repeat center center;
+    }
+
+    #date-left-top-month {
+        cursor: pointer;
+        background: url("./images/icon_back_month.png") no-repeat center center;
+    }
+
+    .select-year,
+    .select-year span {
+        font-family: HelveticaNeue;
+        font-size: 14px;
+        color: #475669;
+        display: inline-block;
+        height: 26px;
+        line-height: 26px;
+        vertical-align: top;
+    }
+
+    #select-year-right {
+        margin-left: 65px;
+    }
+
+    #date-month,
+    #date-month-right {
+        margin-left: 5px;
+    }
+
+    #date-right-top-year {
+        cursor: pointer;
+        transform: rotateY(180deg);
+        float: right;
+        background: url("./images/icon_back_year.png") no-repeat center center;
+    }
+
+    #date-right-top-month {
+        cursor: pointer;
+        transform: rotateY(180deg);
+        float: right;
+        background: url("./images/icon_back_month.png") no-repeat center center;
+    }
+
+    table {
+        margin: 10px auto;
+    }
+
+    table tr {
+        height: 32px;
+    }
+
+    table td {
+        font-size: 12px;
+        color: #475669;
+        text-align: center;
+        width: 24px;
+        line-height: 32px;
+    }
+
+    table td:hover {
+        background-color: pink;
+    }
+
+    table th {
+        color: #8492A6;
+        font-family: AppleSystemUIFont;
+        font-size: 12px;
+    }
+</style>
+
+<body>
+
+    <div id="date">
+        <div id="date-left">
+            <div id="date-left-top">
+                <span id="date-left-top-year"></span>
+                <span id="date-left-top-month"></span>
+                <span id="select-year" class="select-year">
+                    <span id="date-year">2016</span>年
+                    <span id="date-month">2</span>月</span>
+            </div>
+            <table>
+                <tr>
+                    <th>日</th>
+                    <th>一</th>
+                    <th>二</th>
+                    <th>三</th>
+                    <th>四</th>
+                    <th>五</th>
+                    <th>六</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>今天</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                </tr>
+            </table>
+        </div>
+        <div id="date-right">
+            <div id="date-right-top">
+                <span id="select-year-right" class="select-year">
+                    <span id="date-year-right">2016</span>年
+                    <span id="date-month-right">2</span>月</span>
+                <span id="date-right-top-year"></span>
+                <span id="date-right-top-month"></span>
+            </div>
+            <table>
+                <tr>
+                    <th>日</th>
+                    <th>一</th>
+                    <th>二</th>
+                    <th>三</th>
+                    <th>四</th>
+                    <th>五</th>
+                    <th>六</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>今天</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

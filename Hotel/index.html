@@ -3,11 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>test</title>
+    <title>HOTEL</title>
     <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -17,36 +17,292 @@
     <![endif]-->
 </head>
 
-<body>
-    <div id="header" class="main-color">
-        <div class="container-fluid">
+<body style="min-width:1720px">
+    <div class="top">
+        <div id="header" class="main-color">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <div class="header-log">
+                            <span id="log"></span>
+                            <span class="line"></span>
+                            <span class="hotel">酒店项目</span>
+                        </div>
+                    </div>
+                    <div class="col-xs-9">
+                        <div class="header-right"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container select-map">
             <div class="row">
-                <div class="col-xs-3">
-                    <div class="header-log">
-                        <span id="log"></span>
-                        <span class="line"></span>
-                        <span class="hotel">酒店项目</span>
+                <div class="col-xs-3 " id="city">请选择城市</div>
+                <div class="col-xs-3 col-xs-offset-1 " id="date">请选择日期</div>
+                <div class="col-xs-3 col-xs-offset-1 " id="mainkey">酒店名称/位置/关键字</div>
+            </div>
+            <div id="select-city" class="hidden">
+                <ul class="nav nav-tabs city-tabs" role="tablist">
+                    <li role="presentation" class="active">
+                        <a href="#home" aria-controls="home" role="tab" data-toggle="tab">热门</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">ABCDEF</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#beijin" aria-controls="beijin" role="tab" data-toggle="tab">GHJK</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#shanghai" aria-controls="LMNPQ" role="tab" data-toggle="tab">LMNPQ</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#shanghai" aria-controls="RSTW" role="tab" data-toggle="tab">RSTW</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#shanghai" aria-controls="XYZ" role="tab" data-toggle="tab">XYZ</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active " id="home">
+                        <ul id="remeng">
+                            <li>北京</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                            <li>6</li>
+                            <li>7</li>
+                            <li>8</li>
+                            <li>9</li>
+                            <li>10</li>
+                            <li>11</li>
+                            <li>12</li>
+                            <li>13</li>
+                            <li>14</li>
+                            <li>15</li>
+                            <li>16</li>
+                            <li>17</li>
+                            <li>18</li>
+                        </ul>
                     </div>
-                </div>
-                <div class="col-xs-9">
-                    <div class="header-right">
-                        <!-- <ul id='user'>
-                            <li class='my-list'><a href='#'>我的订单</a></li>
-                            <li id='user-li'>
-                                <span id='user-avatar'></span>
-                                <span id='user-name'>nihjao</span>
-                                <span class='glyphicon glyphicon-menu-up saber'></span>
-                                <ul id="nav">
-                                        <li id='self'>个人中心
-                                            <i id='icon'></i>
-                                        </li>
-                                        <li id='account'>账户设置</li>
-                                        <li id='backlogin'>退出登录</li>
-                                    </ul>
-                            </li>   
-                        </ul> -->
+                    <div role="tabpanel" class="tab-pane" id="profile">
+                        <ul id="remeng">
+                            <li>北京</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                            <li>6</li>
+                            <li>7</li>
+                            <li>澳门特别行政区</li>
+                            <li>9</li>
+                            <li>10</li>
+                            <li>11</li>
+                            <li>12</li>
+                            <li>13</li>
+                            <li>14</li>
+                            <li>15</li>
+                            <li>16</li>
+                            <li>17</li>
+                            <li>18</li>
+                        </ul>
                     </div>
+                    <div role="tabpanel" class="tab-pane" id="beijin">...</div>
+                    <div role="tabpanel" class="tab-pane" id="shanghai">...</div>
+                    <div role="tabpanel" class="tab-pane" id="LMNPQ">...</div>
+                    <div role="tabpanel" class="tab-pane" id="RSTW">...</div>
+                    <div role="tabpanel" class="tab-pane" id="XYZ">...</div>
                 </div>
+            </div>
+            <div id="date-tab" class="hidden">
+                <div id="date-left">
+                    <div id="date-left-top">
+                        <span id="date-left-top-year"></span>
+                        <span id="date-left-top-month"></span>
+                        <span id="select-year" class="select-year">
+                            <span id="date-year">2016</span>年
+                            <span id="date-month">2</span>月</span>
+                    </div>
+                    <table>
+                        <tr>
+                            <th>日</th>
+                            <th>一</th>
+                            <th>二</th>
+                            <th>三</th>
+                            <th>四</th>
+                            <th>五</th>
+                            <th>六</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>今天</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="date-right">
+                    <div id="date-right-top">
+                        <span id="select-year-right" class="select-year">
+                            <span id="date-year-right">2016</span>年
+                            <span id="date-month-right">2</span>月</span>
+                        <span id="date-right-top-year"></span>
+                        <span id="date-right-top-month"></span>
+                    </div>
+                    <table>
+                        <tr>
+                            <th>日</th>
+                            <th>一</th>
+                            <th>二</th>
+                            <th>三</th>
+                            <th>四</th>
+                            <th>五</th>
+                            <th>六</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>今天</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <button type="button" class="btn btn-primary btn-lg " id="sousuo">
+            <i class="glyphicon glyphicon-search "></i> 搜索</button>
+    </div>
+    <div class=".container  main-body">
+        <div class="body-top">
+            <div class="body-tab">
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs body-ul" role="tablist">
+                    <li class="body-remeng">热门酒店</li>
+                    <li role="presentation">
+                        <a href="#xian" aria-controls="xian" role="tab" data-toggle="tab">西安</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#beijing" aria-controls="beijing" role="tab" data-toggle="tab">北京</a>
+                    </li>
+                    <li role="presentation">
+                            <a href="#shang" aria-controls="shang" role="tab" data-toggle="tab">上海</a>
+                        </li>
+                    <li role="presentation">
+                        <a href="#guangzou" aria-controls="guangzou" role="tab" data-toggle="tab">广州</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#shengzen" aria-controls="shengzen" role="tab" data-toggle="tab">深圳</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#hangzou" aria-controls="hangzou" role="tab" data-toggle="tab">杭州</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#xiamen" aria-controls="xiamen" role="tab" data-toggle="tab">厦门</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#sanya" aria-controls="sanya" role="tab" data-toggle="tab">三亚</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#tianjin" aria-controls="tianjin" role="tab" data-toggle="tab">天津</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#chengdu" aria-controls="chengdu" role="tab" data-toggle="tab">成都</a>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane" id="xian">西安</div>
+                    <div role="tabpanel" class="tab-pane" id="beijing">北京</div>
+                    <div role="tabpanel" class="tab-pane" id="shang">上海</div>
+                    <div role="tabpanel" class="tab-pane" id="guangzou">guangzou</div>
+                    <div role="tabpanel" class="tab-pane" id="shengzen">shengzen</div>
+                    <div role="tabpanel" class="tab-pane" id="hangzou">hangzou</div>
+                    <div role="tabpanel" class="tab-pane" id="xiamen">xiamen</div>
+                    <div role="tabpanel" class="tab-pane" id="sanya">sanya</div>
+                    <div role="tabpanel" class="tab-pane" id="tianjin">tianjin</div>
+                    <div role="tabpanel" class="tab-pane" id="chengdu">chengdu</div>
+                </div>
+
             </div>
         </div>
     </div>
@@ -60,6 +316,7 @@
     <script src="./lib/jquery/jquery-3.2.1.min.js"></script>
     <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="./js/base.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>

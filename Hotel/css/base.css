@@ -1,3 +1,11 @@
+ 
+ ul,ui li{
+     list-style: none;
+ }
+ a{
+     color:black ;
+ }
+ 
  .main-color {
      background-color: #5944C3;
  }
