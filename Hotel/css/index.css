@@ -22,6 +22,32 @@
     border-radius: 4px;
 }
 
+#mainkey {
+    border: none;
+    padding: 0px;
+}
+
+#mainkey-in {
+    text-indent: 15px;
+    height: 32px;
+    width: 287px;
+    outline: none;
+    border: 1px solid red;
+    border-radius: 4px;
+}
+
+#mainkey-in::-webkit-input-placeholder {
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #303030;
+}
+
+#mainkey-in::-moz-placeholder{ font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #303030;}                  /* Firefox版本19+ */
+#mainkey-in:-ms-input-placeholder{ font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #303030;} 
 #city {
     background: url("../images/icon_location.png") no-repeat 260px center;
 }
@@ -31,16 +57,16 @@
 }
 
 #select-city {
-    z-index:  10004;
+    z-index: 10004;
     position: absolute;
     background: #FFFFFF;
     border: 1px solid #D3DCE6;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 0 6px 0 rgba(0, 0, 0, 0.04);
-    border-radius: 2px;
+    border-radius: 5px;
     width: 515px;
     top: 42px;
     left: 0px;
-    height: 176px;
+    /* height: 176px; */
 }
 
 #select-city .city-tabs li {
@@ -83,6 +109,7 @@
 }
 
 #remeng li {
+    cursor: pointer;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -94,26 +121,50 @@
     font-family: PingFangSC-Regular;
     font-size: 14px;
     color: #3E3E3E;
-    background-color: pink;
+    /* background-color: pink; */
     text-align: center;
     line-height: 24px;
 }
 
+#remeng li:hover {
+    color: #fff;
+    background-color: #5944c3;
+    border-radius: 4px;
+}
+
+#remeng li:active {
+    background-color: pink;
+}
+
 #remeng {
     padding-left: 0px;
-    height: 40px;
+    /* height: 40px; */
+}
+
+.tab-content .clearfix:after {
+    content: "";
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+.tab-content .clearfix {
+    zoom: 1;
 }
 
 /* date */
 
 #date-tab {
+    z-index: 1;
     position: absolute;
     top: 42px;
-    left: 392px;
+    left: 382px;
     background: #FFFFFF;
     border: 1px solid #D3DCE6;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 0 6px 0 rgba(0, 0, 0, 0.04);
-    border-radius: 2px;
+    border-radius: 6px;
     /* width: 515px; */
     /* border: 1px solid red; */
 }
@@ -244,7 +295,7 @@ table th {
 
 .main-body {
     width: 1490px;
-    height: 400px;
+    /* height: 586px; */
     /* background-color: pink; */
     margin: 0 auto;
 }
@@ -254,8 +305,6 @@ table th {
     height: 56px;
     border-bottom: 2px solid  #5944C3;
 } */
-
-
 
 .body-tab {
     /* display:  inline-block; */
@@ -268,11 +317,13 @@ table th {
     position: relative;
     border-bottom: 3px solid #5944C3;
 }
-.body-ul li{
+
+.body-ul li {
     font-family: PingFangSC-Regular;
-font-size: 14px;
-color: #3E3E3E;
+    font-size: 14px;
+    color: #3E3E3E;
 }
+
 .body-ul .body-remeng {
     font-family: PingFangSC-Regular;
     font-size: 16px;
@@ -282,6 +333,7 @@ color: #3E3E3E;
     /* margin-left: 0px; */
     margin-right: 36px;
 }
+
 .body-tab .nav-tabs>li.active>a,
 .body-tab .nav-tabs>li.active>a:hover,
 .body-tab .nav-tabs>li.active>a:focus {
@@ -289,13 +341,14 @@ color: #3E3E3E;
     font-size: 14px;
     color: #3E3E3E;
     cursor: default;
-    background: url("../images/beijing.png") no-repeat  center center;
-    background-size:  cover;
+    background: url("../images/beijing.png") no-repeat center center;
+    background-size: cover;
     border: 1px solid transparent;
-    border-bottom-color:#5944C3;
-    border-bottom: 1px solid #5944C3 ;
+    border-bottom-color: #5944C3;
+    border-bottom: 1px solid #5944C3;
     /* border-image: url("../images/sanjiao.png"); */
 }
+
 /* .body-tab .sanjiao{
     position: absolute;
     top: 28px;
@@ -304,10 +357,22 @@ color: #3E3E3E;
     z-index: 10003;
     font-size: 21px;
 } */
+
 .body-tab .nav-tabs>li>a:hover {
-    border-color:  transparent;
+    border-color: transparent;
 }
-.body-tab .nav>li>a:hover, .nav>li>a:focus {
+
+.body-tab .nav>li>a:hover,
+.nav>li>a:focus {
     text-decoration: none;
     background-color: transparent;
+}
+
+.tab-content #xian ul li {
+    margin-top: 36px;
+    width: 220px;
+    height: 220px;
+    display: inline-block;
+    margin-right: 74px;
+    background-color: black;
 }

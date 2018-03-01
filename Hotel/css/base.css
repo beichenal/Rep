@@ -1,5 +1,6 @@
  
  ul,ui li{
+     padding: 0px;
      list-style: none;
  }
  a{
@@ -205,6 +206,7 @@
  /* footer 开始 */
 
  #footer{
+     margin-top: 32px;
      height: 60px;
      background-color: red;
      /* background-color: #5944C3; */

@@ -37,9 +37,9 @@
         </div>
         <div class="container select-map">
             <div class="row">
-                <div class="col-xs-3 " id="city">请选择城市</div>
-                <div class="col-xs-3 col-xs-offset-1 " id="date">请选择日期</div>
-                <div class="col-xs-3 col-xs-offset-1 " id="mainkey">酒店名称/位置/关键字</div>
+                <div class="col-xs-3 " id="city" style="cursor:pointer">请选择城市</div>
+                <div class="col-xs-3 col-xs-offset-1 " id="date" style="cursor:pointer">请选择日期</div>
+                <div class="col-xs-3 col-xs-offset-1 " id="mainkey" ><input type="text" name="" id="mainkey-in" placeholder="酒店名称/位置/关键字"></div>
             </div>
             <div id="select-city" class="hidden">
                 <ul class="nav nav-tabs city-tabs" role="tablist">
@@ -50,68 +50,37 @@
                         <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">ABCDEF</a>
                     </li>
                     <li role="presentation">
-                        <a href="#beijin" aria-controls="beijin" role="tab" data-toggle="tab">GHJK</a>
+                        <a href="#GHJK" aria-controls="beijin" role="tab" data-toggle="tab">GHJK</a>
                     </li>
                     <li role="presentation">
-                        <a href="#shanghai" aria-controls="LMNPQ" role="tab" data-toggle="tab">LMNPQ</a>
+                        <a href="#LMNPQ" aria-controls="LMNPQ" role="tab" data-toggle="tab">LMNPQ</a>
                     </li>
                     <li role="presentation">
-                        <a href="#shanghai" aria-controls="RSTW" role="tab" data-toggle="tab">RSTW</a>
+                        <a href="#RSTW" aria-controls="RSTW" role="tab" data-toggle="tab">RSTW</a>
                     </li>
                     <li role="presentation">
-                        <a href="#shanghai" aria-controls="XYZ" role="tab" data-toggle="tab">XYZ</a>
+                        <a href="#XYZ" aria-controls="XYZ" role="tab" data-toggle="tab">XYZ</a>
                     </li>
                 </ul>
                 <div class="tab-content">
                     <div role="tabpanel" class="tab-pane active " id="home">
-                        <ul id="remeng">
-                            <li>北京</li>
-                            <li>2</li>
-                            <li>3</li>
-                            <li>4</li>
-                            <li>5</li>
-                            <li>6</li>
-                            <li>7</li>
-                            <li>8</li>
-                            <li>9</li>
-                            <li>10</li>
-                            <li>11</li>
-                            <li>12</li>
-                            <li>13</li>
-                            <li>14</li>
-                            <li>15</li>
-                            <li>16</li>
-                            <li>17</li>
-                            <li>18</li>
+                        <ul id="remeng" class="clearfix">
                         </ul>
                     </div>
                     <div role="tabpanel" class="tab-pane" id="profile">
-                        <ul id="remeng">
-                            <li>北京</li>
-                            <li>2</li>
-                            <li>3</li>
-                            <li>4</li>
-                            <li>5</li>
-                            <li>6</li>
-                            <li>7</li>
-                            <li>澳门特别行政区</li>
-                            <li>9</li>
-                            <li>10</li>
-                            <li>11</li>
-                            <li>12</li>
-                            <li>13</li>
-                            <li>14</li>
-                            <li>15</li>
-                            <li>16</li>
-                            <li>17</li>
-                            <li>18</li>
+                        <ul class="clearfix" id="remeng" >
                         </ul>
                     </div>
-                    <div role="tabpanel" class="tab-pane" id="beijin">...</div>
-                    <div role="tabpanel" class="tab-pane" id="shanghai">...</div>
-                    <div role="tabpanel" class="tab-pane" id="LMNPQ">...</div>
-                    <div role="tabpanel" class="tab-pane" id="RSTW">...</div>
-                    <div role="tabpanel" class="tab-pane" id="XYZ">...</div>
+                    <div role="tabpanel" class="tab-pane" id="GHJK">
+                            <ul class="clearfix" id="remeng" ></ul>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="LMNPQ">
+                            <ul class="clearfix" id="remeng" ></ul>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="RSTW">
+                        <ul class="clearfix" id="remeng" ></ul></div>
+                    <div role="tabpanel" class="tab-pane" id="XYZ">
+                        <ul class="clearfix" id="remeng" ></ul></div>
                 </div>
             </div>
             <div id="date-tab" class="hidden">
@@ -257,15 +226,15 @@
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs body-ul" role="tablist">
                     <li class="body-remeng">热门酒店</li>
-                    <li role="presentation">
+                    <li role="presentation" class="active">
                         <a href="#xian" aria-controls="xian" role="tab" data-toggle="tab">西安</a>
                     </li>
                     <li role="presentation">
                         <a href="#beijing" aria-controls="beijing" role="tab" data-toggle="tab">北京</a>
                     </li>
                     <li role="presentation">
-                            <a href="#shang" aria-controls="shang" role="tab" data-toggle="tab">上海</a>
-                        </li>
+                        <a href="#shang" aria-controls="shang" role="tab" data-toggle="tab">上海</a>
+                    </li>
                     <li role="presentation">
                         <a href="#guangzou" aria-controls="guangzou" role="tab" data-toggle="tab">广州</a>
                     </li>
@@ -291,7 +260,20 @@
 
                 <!-- Tab panes -->
                 <div class="tab-content">
-                    <div role="tabpanel" class="tab-pane" id="xian">西安</div>
+                    <div role="tabpanel" class="tab-pane active" id="xian">
+                        <ul>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>56</li>
+                            <li>6</li>
+                            <li>7</li>
+                            <li>8</li>
+                            <li>7</li>
+                            <li>8</li>
+                        </ul>
+                    </div>
                     <div role="tabpanel" class="tab-pane" id="beijing">北京</div>
                     <div role="tabpanel" class="tab-pane" id="shang">上海</div>
                     <div role="tabpanel" class="tab-pane" id="guangzou">guangzou</div>
