@@ -42,12 +42,20 @@
     color: #303030;
 }
 
-#mainkey-in::-moz-placeholder{ font-family: PingFangSC-Regular;
+#mainkey-in::-moz-placeholder {
+    font-family: PingFangSC-Regular;
     font-size: 12px;
-    color: #303030;}                  /* Firefox版本19+ */
-#mainkey-in:-ms-input-placeholder{ font-family: PingFangSC-Regular;
+    color: #303030;
+}
+
+/* Firefox版本19+ */
+
+#mainkey-in:-ms-input-placeholder {
+    font-family: PingFangSC-Regular;
     font-size: 12px;
-    color: #303030;} 
+    color: #303030;
+}
+
 #city {
     background: url("../images/icon_location.png") no-repeat 260px center;
 }
@@ -121,7 +129,6 @@
     font-family: PingFangSC-Regular;
     font-size: 14px;
     color: #3E3E3E;
-    /* background-color: pink; */
     text-align: center;
     line-height: 24px;
 }
@@ -200,9 +207,25 @@
     background: url("../images/icon_back_year.png") no-repeat center center;
 }
 
+#date-left-top-year:active,
+#date-left-top-month:active {
+    border-radius: 4px;
+    background-color: pink;
+}
+
 #date-left-top-month {
     cursor: pointer;
     background: url("../images/icon_back_month.png") no-repeat center center;
+}
+
+#tab-l .xingqi th,
+#tab-r .xingqi th {
+    text-align: center;
+    width: 24px;
+    line-height: 32px;
+    color: #8492A6;
+    font-family: AppleSystemUIFont;
+    font-size: 12px;
 }
 
 .select-year,
@@ -247,7 +270,9 @@ table tr {
     height: 32px;
 }
 
-table td {
+#tab-l td,
+#tab-r td {
+    cursor: pointer;
     font-size: 12px;
     color: #475669;
     text-align: center;
@@ -255,8 +280,16 @@ table td {
     line-height: 32px;
 }
 
-table td:hover {
+table .date-td:hover {
+    color: #fff !important;
+    background-color: #5944C3;
+    border-radius: 4px
+}
+
+table .date-td:active {
+    color: #fff !important;
     background-color: pink;
+    border-radius: 4px
 }
 
 table th {
@@ -265,11 +298,21 @@ table th {
     font-size: 12px;
 }
 
+.act {
+    color: #fff !important;
+    background-color: #5944C3 !important;
+    border-radius: 4px !important;
+}
+
+.no_click {
+    color: #ccc !important;
+    background-color: #fff !important;
+}
+
 /* date-tab 结束 */
 
 #sousuo {
     outline: transparent;
-    /* border:  none; */
     display: block;
     margin: 32px auto;
 }
@@ -295,20 +338,10 @@ table th {
 
 .main-body {
     width: 1490px;
-    /* height: 586px; */
-    /* background-color: pink; */
     margin: 0 auto;
 }
 
-/* .body-top{
-    width: 100%;
-    height: 56px;
-    border-bottom: 2px solid  #5944C3;
-} */
-
 .body-tab {
-    /* display:  inline-block; */
-    /* margin-top: 14px; */
     display: inline-block;
     width: 100%;
 }
@@ -330,7 +363,6 @@ table th {
     color: #3E3E3E;
     height: 42px;
     line-height: 42px;
-    /* margin-left: 0px; */
     margin-right: 36px;
 }
 
@@ -346,17 +378,7 @@ table th {
     border: 1px solid transparent;
     border-bottom-color: #5944C3;
     border-bottom: 1px solid #5944C3;
-    /* border-image: url("../images/sanjiao.png"); */
 }
-
-/* .body-tab .sanjiao{
-    position: absolute;
-    top: 28px;
-    left: 131px;
-    color: #5944C3;
-    z-index: 10003;
-    font-size: 21px;
-} */
 
 .body-tab .nav-tabs>li>a:hover {
     border-color: transparent;
@@ -368,11 +390,46 @@ table th {
     background-color: transparent;
 }
 
-.tab-content #xian ul li {
+.tab-content .hot-city ul li {
+    vertical-align: top;
+    position: relative;
     margin-top: 36px;
     width: 220px;
     height: 220px;
     display: inline-block;
     margin-right: 74px;
-    background-color: black;
+    background-color: pink;
+}
+
+.tab-content .hot-city ul li>.jiudian {
+    width: 220px;
+    position: absolute;
+    top: 152px;
+    height: 68px;
+    background: rgba(255, 255, 255, 0.8);
+    /* background-color: red; */
+}
+
+#jiudian-bottom {
+    margin-top: 10px;
+    margin-left: 14px;
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #3E3E3E;
+}
+#jiudian-style{
+    margin-left: 21px;
+}
+#jiudian-money{
+    margin-top: 5px;
+    margin-left: 14px;
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    font-family: PingFangSC-Semibold;
+    font-size: 18px;
+    color: #FB430A;
 }
