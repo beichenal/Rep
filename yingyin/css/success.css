@@ -1,0 +1,119 @@
+main>.main>#title{
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #363636;
+    margin-bottom: 20px;
+}
+main>.main>#title>span>a{
+    color: #363636;
+}
+.submission_right{
+    width: 280px;
+    float: right;
+}
+.submission_right .essence{
+    width: 280px;
+}
+.submission_right .essence .title{
+    background: #206698;
+}
+.submission_right .essence ul li::before{
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #206698;
+    border-radius: 50%;
+    margin:0 8px 0 11px;
+}
+main>.main>.main_1{
+    width: 820px;
+    background: #fff;
+    padding: 37px 42px 48px 42px;
+    box-sizing: border-box;
+    position: relative;
+}
+main>.main>.main_1>.article_title{
+    font-family: PingFangSC-Medium;
+    font-size: 20px;
+    color: #363636;
+    margin-bottom: 13px;
+}
+main>.main>.main_1>.information{
+    margin-bottom: 32px;
+}
+main>.main>.main_1>.information>span{
+    margin-right: 20px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #AEAEAE;
+}
+main>.main>.main_1>.line{
+    border: 1px solid #EBEBEB;
+    width: 820px;
+    position: absolute;
+    left:0;
+   
+}
+main>.main>.main_1>.explain{
+    padding-top: 19px;
+    font-family: PingFangSC-Medium;
+    font-size: 15px;
+    color: #363636;
+    line-height: 25px;
+    margin-bottom: 48px;
+}
+main>.main>.main_1>.explain>.title{
+    font-weight: 600;
+}
+main>.main>.main_1>.vote>.title{
+    font-family: PingFangSC-Medium;
+    font-size: 16px;
+    color: #363636;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+main>.main>.main_1>.vote>.detail ul li{
+    font-family: PingFangSC-Regular;
+    font-size: 15px;
+    color: #363636;
+    margin-bottom: 18px;
+    height:28px;
+    line-height: 28px;
+}
+main>.main>.main_1>.vote>.detail ul li div{
+    display: inline-block;
+}
+main>.main>.main_1>.vote>.detail ul li .detail_title{
+    text-align: right;
+    margin-right: 20px;
+    line-height: 28px;
+    float: left;
+}
+main>.main>.main_1>.vote>.detail ul li .progress_bar{
+    height:28px;
+}
+main>.main>.main_1>.vote>.detail ul li .vote_number{
+    float: right;
+    text-align: left;
+}
+
+/* main>.main>.main_1>.vote>.detail ul li input[type=radio]:checked:after {
+   background-image: url("images/icon_radio_button_checked.png");
+}
+main>.main>.main_1>.vote>.detail ul li input[type=radio]:after {
+    background-image: url("images/icon_radio_button_unchecked.png");
+} */
+main>.main>.main_1>.vote>.detail{
+    margin-bottom: 24px;
+}
+main>.main>.main_1>.vote button{
+    width: 100px;
+    height:36px;
+    background: #272727;
+    border-radius: 2px;
+    border: none;
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #FFFFFF;
+}

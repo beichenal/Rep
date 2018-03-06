@@ -1,0 +1,76 @@
+main>.main>#title{
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #363636;
+    margin-bottom: 20px;
+}
+main>.main>#title>span>a{
+    color: #363636;
+}
+.submission_right{
+    width: 280px;
+    float: right;
+}
+.submission_right .essence{
+    width: 280px;
+
+}
+.submission_right .essence .title{
+    background: #206698;
+}
+.submission_right .essence ul li::before{
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #206698;
+    border-radius: 50%;
+    margin:0 8px 0 11px;
+}
+
+main>.main>.announcement_list{
+    display: inline-block;
+    width: 740px;
+    background: #fff;
+    margin-bottom: 20px;
+    padding:22px 40px;
+    position: relative;
+}
+main>.main>.announcement_list .title{
+    font-family: PingFangSC-Medium;
+    font-size: 18px;
+    color: #363636;
+    font-weight: 600;
+    margin-bottom: 11px;
+}
+main>.main>.announcement_list .timer{
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #AEAEAE;
+    margin-bottom: 18px;
+}
+main>.main>.announcement_list .timer span:first-child{
+    margin-right: 40px;
+}
+main>.main>.announcement_list .line{
+    width: 820px;
+    border: 1px solid #EBEBEB;
+    position: absolute;
+    left:0;
+}
+main>.main>.announcement_list .container{
+    padding-top: 20px;
+    font-family: PingFangSC-Regular;
+    font-size: 15px;
+    color: #363636;
+    line-height: 25px;
+}
+main>.main .more{
+    width: 820px;
+    text-align: right;
+}
+main>.main .more a{
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #206698;
+}

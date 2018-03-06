@@ -1,0 +1,11 @@
+.mian_1 .w280 ul{
+    padding-left: 15px;
+}
+.mian_1 .w280 ul li{
+    display: inline-flex;
+    margin-right: 5px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #363636;
+    line-height: 25px;
+}

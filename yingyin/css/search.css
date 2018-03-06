@@ -1,0 +1,150 @@
+main>.main>.title{
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #363636;
+    margin-bottom: 47px;
+}
+main>.main>.title a{
+    color: #363636;
+}
+main>.main>.search{
+    text-align: center;
+    margin-bottom: 40px;
+}
+main>.main>.search>.search_left{
+    width: 462px;
+    height: 38px;
+    display: inline-block;
+    background: #fff;
+}
+main>.main>.search>.search_left .search_title{
+    display: inline-block;
+    float: left;
+    width: 58px;
+    height: 20px;
+    margin-left: 14px;
+    margin-top: 9px;
+    border-right: 1px solid #CECECE;
+    cursor: pointer;
+}
+main>.main>.search>.search_left .search_title:hover ul{
+    overflow: inherit;
+}
+main>.main>.search>.search_left ul{
+    height: 20px;
+    display: inline-block;
+    overflow: hidden;
+    float: left;
+}
+main>.main>.search>.search_left ul li{
+    background: #fff;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #363636;
+}
+main>.main>.search>.search_left input{
+    width:283px;
+    height: 20px;
+    display: inline-block;
+    margin-top: 7px;
+    border: none;
+    padding-left: 17px;
+}
+main>.main>.search>.search_left input::-moz-placeholder{
+    color: #363636;
+}
+main>.main>.search>.search_left button{
+    width: 84px;
+    height:38px;
+    background: #F9BE04;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #363636;
+    border: none;
+    float: right;
+    cursor: pointer;
+}
+main>.main>.container{
+    width: 820px;
+    height: 180px;
+    background: #fff;
+    margin: 0 auto 21px auto;
+}
+main>.main>.container .list{
+    display: inline-block;
+    width: 525px;
+    margin-top: 20px;
+    margin-left: 31px;
+}
+main>.main>.container .list .title{
+    font-family: PingFangSC-Medium;
+    font-size: 18px;
+    color: #363636;
+    font-weight: 600;
+    margin-bottom: 11px;
+}
+main>.main>.container .list .details{
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #AEAEAE;
+    margin-bottom: 22px;
+}
+main>.main>.container .list .details span:first-child{
+    margin-right: 50px;
+}
+main>.main>.container .list .container{
+    opacity: 0.8;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #363636;
+    line-height: 21px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp:3;
+    -webkit-box-orient: vertical;
+}
+main>.main>.container img{
+    float: right;
+    width: 228px;
+    height: 180px;
+}
+main>.main .page{
+    text-align: center;
+    margin-top: 82px;
+}
+main>.main .page ul{
+    display: inline-flex;
+}
+main>.main .page li{
+    float: left;
+    margin-right: 30px;
+}
+main>.main .page a{
+    font-family: AppleSystemUIFont;
+    font-size: 14px;
+    color: #606266;
+    letter-spacing: 0;
+    line-height: 14px;
+    line-height: 30px;
+}
+main>.main .page a.hover{
+    color: #F9BE04;
+}
+main>.main .page>div{
+    display: inline-block;
+}
+main>.main .page input{
+    width: 60px;
+    height: 28px;
+    text-align: center;
+    border: 1px solid #DCDFE6;
+    border-radius: 3px;
+}
+main>.main .page input:-moz-placeholder{
+    font-family: AppleSystemUIFont;
+    font-size: 14px;
+    color: #606266;
+    letter-spacing: 0;
+    line-height: 14px;
+}
